@@ -245,16 +245,24 @@ function playSound(duration, sound, volume) {
 
 
 function drawStats(){
+  if(somethingToggle == false){
+    
+    x1 = actionBox.X - 360;
+    x2 = actionBox.X - 30;
+    y1 = actionBox.Y + actionBox.height + 60;
+    y2 = actionBox.Y + actionBox.height + 30;
+    somethingToggle = true;
+  }
   textSize(40);
   textFont(normalFont);
   fill(255);
   noStroke();
-  text(playerName + "  LV 4 HP                 " + player.health + "/100", actionBox.X - 360, actionBox.Y + actionBox.height + 60);
+  text(playerName + "  LV 4 HP                 " + player.health + "/100", x1, y1);
 
   fill(169,5,8);
-  rect(actionBox.X - 30, actionBox.Y + actionBox.height + 30, 290, 40);
+  rect(x2, y2, 290, 40);
   fill(244,252,60);
-  rect(actionBox.X - 30, actionBox.Y + actionBox.height + 30, (player.health / 100) * 290, 40);
+  rect(x2, y2, (player.health / 100) * 290, 40);
   
 }
 
