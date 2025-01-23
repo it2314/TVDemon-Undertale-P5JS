@@ -242,7 +242,7 @@ function playSound(duration, sound, volume) {
   }, duration);
 }
 
-
+let x1, x2, y1, y2;
 
 function drawStats(){
   if(somethingToggle == false){
