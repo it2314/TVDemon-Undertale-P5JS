@@ -16,6 +16,7 @@ let fightingl2 = false;
 let actText = false;
 let demonDamage = false;
 let demonDamageTimer = 0;
+let somethingToggle = false;
 
 let lastFlickerTime = 0;
 let flickerInterval; // Time in milliseconds between flickers (adjust as necessary)
