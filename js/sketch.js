@@ -249,7 +249,7 @@ function drawStats(){
   textFont(normalFont);
   fill(255);
   noStroke();
-  text(playerName + "  LV 4 HP                 " + player.health + "/100", actionBox.X - 290, ActionBox.Y - ActionBox.height - 50);
+  text(playerName + "  LV 4 HP                 " + player.health + "/100", actionBox.X - 230, ActionBox.Y - ActionBox.height - 50);
 
   fill(169,5,8);
   rect(actionBox.X - 290, ActionBox.Y - ActionBox.height - 50, 290, 40);
